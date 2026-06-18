@@ -8,7 +8,8 @@ pipeline{
   stages{
     stage("Checkout"){
       steps{
-        git branch: 'main' url: "https://github.com/anjanm0545-dotcom/gdl5.git"
+        git branch: 'main',
+          url: "https://github.com/anjanm0545-dotcom/gdl5.git"
       }
     }
     stage("Build"){
